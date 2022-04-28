@@ -162,8 +162,9 @@ def reset_db():
     aaa = pd.DataFrame(dict1)
     try:
         aaa.to_sql('data', cx, index=False,if_exists='replace')
+        return True
     except:
-        pass
+        return False
 
     print(1)
 if 0:
@@ -301,6 +302,15 @@ def func( input):#新来一个数据,我们让他跟data进行比较
         inputliemingtime=[i[0] for i in input[1:] if i[1]=='time']
         inputliemingstrigntime=inputliemingstrign+inputliemingtime
 
+
+
+
+        if not inputliemingstrigntime:
+            inputliemingstrigntime=[i[0] for i in input[1:]]
+        if not inputliemingnum:
+            inputliemingnum=[i[0] for i in input[1:]]
+
+
         inputliemingstrigntimecount=[quanbudeshuchulieming.count(i) for i in inputliemingstrigntime]
         inputliemingnumcount=[quanbudeshuchulieming.count(i) for i in inputliemingnum]
 
@@ -309,6 +319,8 @@ def func( input):#新来一个数据,我们让他跟data进行比较
 
         outpic=[i['output'][1] for i in data if  b in i['output'][0] or a in i['output'][0]]
         outpiccount=[outpic.count(i) for i in outpic]
+        if outpiccount==[]:
+            return [[a,b], '柱状图']
         outpic=outpic[outpiccount.index(max(outpiccount))]
         return [[a,b], outpic]
         print(1)
@@ -348,13 +360,18 @@ dummy_input=[
 
 
 def insert_to_database(input,output):
-
-    a=str(input)
-    b=str(output)
-    sql=f'insert into data (input,output)values ( "{a}" ,"{b}" );'
-    cx.execute(sql)
-    cx.commit()
-    print(sql)
+    try:
+        cx = sqlite3.connect(" 1.db ")
+        a=str(input)
+        b=str(output)
+        sql=f'insert into data (input,output)values ( "{a}" ,"{b}" );'
+        print(sql,33333333333333333333333)
+        cx.execute(sql)
+        cx.commit()
+        print(sql)
+        return True
+    except:
+        return False
 def read_all_data_from_db():
     a=pd.read_sql('select * from data',cx)
     return a
@@ -369,3 +386,152 @@ print('做dummy预测')
 
 
 print(func(dummy_input))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import os
+import io
+import json
+# import torch
+
+from PIL import Image
+from flask import Flask, jsonify, request, render_template
+from flask_cors import CORS
+
+
+app = Flask(__name__)
+CORS(app)  # 解决跨域问题
+
+# weights_path = "./MobileNetV2(flower).pth"
+# class_json_path = "./class_indices.json"
+#
+# # select device
+# device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+# print(device)
+# # create model
+# model = eval(num_classes=5)
+# # load model weights
+# model.load_state_dict(torch.load(weights_path, map_location=device))
+# model.to(device)
+# model.eval()
+
+# load class info
+# json_file = open(class_json_path, 'rb')
+# class_indict = json.load(json_file)
+
+
+def get_prediction(image_bytes):
+    try:
+        tensor = ""
+        outputs = torch.softmax(model.forward(tensor).squeeze(), dim=0)
+        prediction = outputs.detach().cpu().numpy()
+        template = "class:{:<15} probability:{:.3f}"
+        index_pre = [(class_indict[str(index)], float(p)) for index, p in enumerate(prediction)]
+        # sort probability
+        index_pre.sort(key=lambda x: x[1], reverse=True)
+        text = [template.format(k, v) for k, v in index_pre]
+        return_info = {"result": text}
+    except Exception as e:
+        return_info = {"result": [str(e)]}
+    return return_info
+
+
+
+
+
+
+
+
+#
+"""\
+demo:
+
+
+["aaa",
+    ["订单日期","time",4],
+    ["市场类别","string",2],
+    ["区域","string",2],
+    ["产品类别","string",2],
+    ["产品名称","string",2],
+    ["预计毛利","num",10]
+] 
+"""
+@app.route("/func", methods=["POST","GET"])
+# @torch.no_grad()
+
+def editorData():
+    # 获取图片文件 name = upload
+    img = request.get_json()
+
+    # 定义一个图片存放的位置 存放在static下面
+    print('获取json',img
+          )
+    return jsonify(func(img))
+
+
+
+
+"""\
+demo:
+
+
+{"input":["aaa",
+    ["订单日期","time",4],
+    ["市场类别","string",2],
+    ["区域","string",2],
+    ["产品类别","string",2],
+    ["产品名称","string",2],
+    ["预计毛利","num",10]
+] ,"output":
+
+
+[
+        ["产品类别", "预计毛利"]
+        , "饼状图"
+
+    ]}
+"""
+
+
+
+
+@app.route("/insert_to_database", methods=["POST","GET"])
+# @torch.no_grad()
+
+def editorData222():
+    # 获取图片文件 name = upload
+    img = request.get_json()
+
+    # 定义一个图片存放的位置 存放在static下面
+    a=insert_to_database(img['input'],img['output'])
+    return jsonify(a)
+
+@app.route("/reset_db", methods=["GET", "POST"])
+def reset_db2():
+    a=reset_db()
+    return a
+
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5000)
+
+
+
+
+
+
+
+
