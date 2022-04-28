@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4004f0b-6469-4836-87ba-e976c7aad5dd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="1" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="27pIwK1EWIWgbgKKQnLU8T9STsq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\untitled14" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="智能图表" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4004f0b-6469-4836-87ba-e976c7aad5dd" name="Default Changelist" comment="" />
+      <created>1650010837730</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650010837730</updated>
+      <workItem from="1650010856457" duration="5875000" />
+      <workItem from="1650076414506" duration="1471000" />
+      <workItem from="1650095266136" duration="789000" />
+      <workItem from="1650097799278" duration="2250000" />
+      <workItem from="1650155919466" duration="323000" />
+      <workItem from="1650508719336" duration="1043000" />
+      <workItem from="1650513497526" duration="606000" />
+      <workItem from="1650618032442" duration="3407000" />
+      <workItem from="1650872453292" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="667" y="94" key="#xdebugger.evaluate" timestamp="1650016052706">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="667" y="94" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1650016052706" />
+    <state width="1173" height="462" key="DebuggerActiveHint" timestamp="1650621386180">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1173" height="462" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1650621386180" />
+    <state width="1237" height="212" key="GridCell.Tab.0.bottom" timestamp="1650621450249">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="212" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1650621450249" />
+    <state width="1237" height="212" key="GridCell.Tab.0.center" timestamp="1650621450249">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="212" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1650621450249" />
+    <state width="1237" height="212" key="GridCell.Tab.0.left" timestamp="1650621450249">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="212" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1650621450249" />
+    <state width="1237" height="212" key="GridCell.Tab.0.right" timestamp="1650621450249">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="212" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1650621450249" />
+    <state width="1237" height="195" key="GridCell.Tab.1.bottom" timestamp="1650621435040">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="195" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1650621435040" />
+    <state width="1237" height="195" key="GridCell.Tab.1.center" timestamp="1650621435040">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="195" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1650621435040" />
+    <state width="1237" height="195" key="GridCell.Tab.1.left" timestamp="1650621435040">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="195" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1650621435040" />
+    <state width="1237" height="195" key="GridCell.Tab.1.right" timestamp="1650621435040">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="195" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1650621435040" />
+    <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1650012958035">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1650012958035" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1650015723165">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1650015723165" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>313</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="pd.DataFrame(dict1)" />
+        <watch expression="aaa" />
+        <watch expression="a" />
+        <watch expression="i" />
+        <watch expression="tmp" />
+        <watch expression="[eval(tmp['input'])]" />
+        <watch expression="eval(tmp['input'])" />
+        <watch expression="data" />
+        <watch expression="tmp['output']" />
+        <watch expression="[i[:2] for i in dummy_input[1:]]" language="Python" />
+        <watch expression="pipei[2]" />
+        <watch expression="[i for i in data]" />
+        <watch expression="[i['output'] for i in data]" />
+        <watch expression="[i['output'][0] for i in data]" />
+        <watch expression="sum([i['output'][0] for i in data],[])" />
+        <watch expression="[i for i in input]" />
+        <watch expression="[i for i in input[1:]]" />
+        <watch expression="[i[0] for i in input[1:]]" />
+        <watch expression="[i[0] for i in input[1:] if i[1]=='string']" />
+        <watch expression="[i[0] for i in input[1:] if i[1]=='num']" />
+        <watch expression="[i[0] for i in input[1:] if i[1]=='time']" />
+        <watch expression="[quanbudeshuchulieming.count(i) for i in inputliemingstrigntime]" />
+        <watch expression="inputliemingstrigntimecount[quanbudeshuchulieming.index(max(quanbudeshuchulieming))]" />
+        <watch expression="quanbudeshuchulieming[quanbudeshuchulieming.index(max(quanbudeshuchulieming))]" />
+        <watch expression="inputliemingstrigntimecount.index(max(inputliemingstrigntimecount))" />
+        <watch expression="inputliemingstrigntime[inputliemingstrigntimecount.index(max(inputliemingstrigntimecount))]" />
+        <watch expression="inputliemingnum[inputliemingnumcount.index(max(inputliemingnumcount))]" />
+        <watch expression="[i['output'][1] for i in data]" />
+        <watch expression="[i['output'][1] for i in data if a or b in i['output'][0]]" />
+        <watch expression="[i['output'][1] for i in data if  b in i['output'][0] or a in i['output'][0]]" />
+        <watch expression="[outpic.count(i) for i in outpic]" />
+        <watch expression="outpic[outpiccount.index(max(outpiccount))]" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/$main.coverage" NAME="main Coverage Results" MODIFIED="1650621450243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
